@@ -1,0 +1,143 @@
+body {
+    background-color: #EDEFEE;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Sweet Bread', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    max-width: 90%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: black;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #EDEFEE;
+    color: black;
+}
+
+.articles {
+    display: flex;
+}
+
+.articles article {
+    flex: 1;
+    margin: 10px;
+}
+
+.banner {
+    display: flex;
+}
+
+.banner p {
+    color: black;
+    text-align: auto;
+    text-shadow: 1 1 15px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.text-container {
+    position: absolute;
+    margin: auto;
+    margin-top: 2rem;
+    max-width: 80%;
+    border-radius: 5px;
+    background-color: #E0BFB8;
+    padding: 1%;
+    opacity: 0.7;
+    left: 1%;
+    right: 1%;
+}
+
+.img-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    height: 300px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    box-sizing: border-box;
+}
+
+.banner img {
+    position: relative;
+    max-width: 100%;
+    top: -100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+@media (max-width:1420px){
+    .banner img {
+        position: relative;
+        top: -40%;
+    }
+}
+
+@media (max-width:720px){
+    .banner img {
+        position: relative;
+        top: -20%;
+    }
+
+    .banner p {
+        font-size: 0.8rem;
+    }
+}
+
+.banner img:hover {
+    -ms-transform: scale(1.3); /* IE 9 */
+    -webkit-transform: scale(1.3); /* Safari 3-8 */
+    transform: scale(1.3);
+    transition: transform .5s;
+}
+
+footer {
+    display: flex;
+    margin-top: 50px;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer img {
+    margin: auto;
+    max-width: 90px;
+}
+
+footer p {
+    margin: auto;
+    text-align: right;
+    vertical-align: middle;
+}
